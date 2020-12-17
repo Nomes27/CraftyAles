@@ -32,7 +32,7 @@ hr {
 .grid_container {
   display: grid;
   /*border: black solid 1px;*/
-  grid-gap: 15px;
+  grid-gap: 25px;
   grid-template-columns: 90%;
   grid-template-rows: auto;
   align-content: center;
