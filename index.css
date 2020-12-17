@@ -10,8 +10,9 @@ h1 {
 h2 {
   font-size: 1rem;
   padding: 1rem 2rem;
-
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 hr {
   width: 60%;
@@ -21,6 +22,50 @@ hr {
   width: 30%;
   margin: 0 auto;
   display: block;
+}
+
+.grid_container {
+  display: grid;
+  /*border: black solid 1px;*/
+  grid-gap: 10px;
+  grid-template-columns: 80%;
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+
+  padding-top: 10px;
+}
+
+.grid_item {
+  background-color: white;
+  height: 100%;
+}
+
+.grid_item img {
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+}
+
+.grid_item h3 {
+  text-align: center;
+  font-family: var(--font);
+}
+.grid_item figcaption {
+  text-align: center;
+  margin: 5px;
+}
+
+.brewery_container {
+  text-align: center;
+}
+.brewery_container h2 {
+  margin: 0 auto;
+  font-family: var(--font);
+}
+.brewery_container p {
+  margin: 0rem 1rem 5rem 1rem;
 }
 footer {
   position: fixed;
@@ -33,37 +78,48 @@ footer {
   color: white;
 }
 
-.grid_container {
-  display: grid;
-  border: black solid 1px;
-  grid-gap: 5px;
-  grid-template-columns: 80%;
-  grid-template-rows: auto;
-  align-content: center;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.img_beer {
-  width: 20%;
-}
-.grid_item {
-  border: black solid 1px;
-}
-.grid_item img {
-  margin: 0 auto;
-  display: block;
-}
-.grid_item h3 {
-  text-align: center;
-  font-family: var(--font);
-}
-.grid_item figcaption {
-  text-align: center;
+@media (min-width: 760px) {
+  .grid_container {
+    grid-template-columns: 40% 40%;
+  }
+  .brewery_container {
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .brewery_container h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1000px) {
   .grid_container {
     grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+  }
+
+  .grid_item figcaption {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brewery_container p {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .img_logo {
+    width: 10%;
   }
 }
