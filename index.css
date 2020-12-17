@@ -11,12 +11,14 @@ h2 {
   font-size: 1rem;
   padding: 1rem 2rem;
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 hr {
   width: 60%;
   margin: 0 auto;
+  height: 1px;
+  background-color: gray;
 }
 .img_logo {
   width: 30%;
@@ -27,7 +29,7 @@ hr {
 .grid_container {
   display: grid;
   /*border: black solid 1px;*/
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: 80%;
   grid-template-rows: auto;
   align-content: center;
@@ -38,8 +40,9 @@ hr {
 }
 
 .grid_item {
-  background-color: white;
+  /*border: 2px solid rgb(230, 230, 230);*/
   height: 100%;
+  box-shadow: 0px 0px 7px rgb(128, 128, 128);
 }
 
 .grid_item img {
@@ -59,18 +62,35 @@ hr {
 
 .brewery_container {
   text-align: center;
+  margin-top: 2rem;
 }
 .brewery_container h2 {
   margin: 0 auto;
   font-family: var(--font);
 }
 .brewery_container p {
-  margin: 0rem 1rem 5rem 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
+.brewery_img_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.brewery_img_container img {
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
 footer {
   position: fixed;
   width: 100%;
-  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   text-align: center;
   bottom: 0;
   background-color: grey;
@@ -98,13 +118,20 @@ footer {
     grid-template-columns: 30% 30% 30%;
     grid-gap: 20px;
   }
-
+  h2 {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .grid_item h3 {
+    font-size: 1.2rem;
+  }
   .grid_item figcaption {
     width: 80%;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
   }
 
   .brewery_container p {
@@ -113,6 +140,23 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.5rem;
+  }
+  .brewery_img_container {
+    justify-content: center;
+  }
+  .brewery_img_container img {
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4rem;
+  }
+  hr {
+    width: 30%;
+    margin: 1rem auto;
+  }
+  footer {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1400px) {
@@ -121,5 +165,9 @@ footer {
   }
   .img_logo {
     width: 10%;
+  }
+  .grid_container {
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 20px;
   }
 }
