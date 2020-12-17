@@ -88,6 +88,7 @@ hr {
 }
 .brewery_img_container img {
   width: 30%;
+  align-self: center;
   margin-bottom: 3rem;
 }
 
