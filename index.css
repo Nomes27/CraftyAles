@@ -71,6 +71,7 @@ hr {
 .brewery_container h2 {
   margin: 0 auto;
   font-family: var(--font);
+  font-size: 1.2rem;
 }
 .brewery_container p {
   margin-bottom: 1rem;
