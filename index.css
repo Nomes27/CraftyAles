@@ -1,5 +1,7 @@
 :root {
   --font: "Major Mono Display", monospace;
+  --font-subheading: "Cutive Mono", monospace;
+  --font-information: "Mallanna", sans-serif;
 }
 
 h1 {
@@ -13,6 +15,7 @@ h2 {
   text-align: center;
   width: 70%;
   margin: 0 auto;
+  font-family: var(--font-subheading);
 }
 hr {
   width: 60%;
@@ -57,7 +60,8 @@ hr {
 }
 .grid_item figcaption {
   text-align: center;
-  margin: 5px;
+  margin: 5px 15px;
+  font-family: var(--font-information);
 }
 
 .brewery_container {
@@ -74,6 +78,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-family: var(--font-information);
 }
 
 .brewery_img_container {
@@ -89,13 +94,13 @@ hr {
 footer {
   position: fixed;
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  left: 0;
   text-align: center;
   bottom: 0;
   background-color: grey;
   padding: 0.5rem;
   color: white;
+  font-family: var(--font-subheading);
 }
 
 @media (min-width: 760px) {
