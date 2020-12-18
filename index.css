@@ -99,7 +99,7 @@ footer {
   left: 0;
   text-align: center;
   bottom: 0;
-  background-color: grey;
+  background-color: rgb(104, 104, 104);
   padding: 0.5rem;
   color: white;
   font-family: var(--font-subheading);
